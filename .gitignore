@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Build products
+build/
+.build/
+DerivedData/
+
+# Xcode user data
+*.xcuserstate
+xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Local editor settings
+.vscode/
+.idea/
+
