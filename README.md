@@ -6,7 +6,7 @@ selected duration by managing the built-in `caffeinate` command.
 ## Features
 
 - Toggle awake mode from the menu bar
-- Choose a duration from 30 minutes to 24 hours
+- Choose a duration from 30 minutes to 7 days, including 1d, 2d, and 7d
 - Display the remaining time
 - Launch automatically at login on macOS 13 or later
 

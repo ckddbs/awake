@@ -17,7 +17,9 @@ private enum Amp12 {
     ("3 hours", 10_800),
     ("6 hours", 21_600),
     ("12 hours", 43_200),
-    ("24 hours", 86_400)
+    ("1d", 86_400),
+    ("2d", 172_800),
+    ("7d", 604_800)
   ]
 }
 
@@ -319,6 +321,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
   private func durationLabel(_ duration: TimeInterval) -> String {
     let seconds = Int(duration)
+    if seconds % 86_400 == 0 {
+      return "\(seconds / 86_400)d"
+    }
+
     if seconds % 3600 == 0 {
       return "\(seconds / 3600)h"
     }
